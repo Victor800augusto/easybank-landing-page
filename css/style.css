@@ -55,17 +55,21 @@ h4 {
 }
 p {
     color: hsl(233, 8%, 62%);
+    line-height: 1.3;
 }
 /* Header */
 
 header {
     background-color: hsl(0, 0%, 100%);
     padding: 20px 100px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .header {
     align-items: center;
     justify-content: space-between;
+    z-index: 20;
 }
 
 .header-logo {
@@ -81,7 +85,7 @@ header {
 }
 
 .btn-invite {
-    padding: 8px 15px;
+    padding: 9px 23px;
     border-radius: 30px;
     color: white;
     border: none;
@@ -102,25 +106,34 @@ header {
 
 .intro div:first-of-type {
     max-width: 400px;
-    margin: 50px;
+    margin: 50px 100px;
+}
+
+.intro div:first-of-type p {
+    margin-bottom: 20px;
 }
 
 .intro-imagem{
-    max-width: 400px;
-    max-height: 400px;
-    overflow: visible;
+    max-width: 500px;
+    max-height: 500px;
     background-image: url(../imagens/bg-intro-desktop.svg);
-    background-position: 30% 50%;
+    background-position: 20% 70%;
     background-size: cover;
-    padding-left: 80px;
-    margin-left: -10px;
+    background-size: 200%;
     align-self: flex-end;
+    clip-path: inset(0 0 -100px 0);
+}
+
+.intro-imagem::before {
+    content: "";
+    position: relative;
 }
 
 .intro img {
-    max-width: 400px;
-    float: left;
-    top: 50px;
+    max-width: 550px;
+    position: relative;
+    left: 45px;
+    bottom: 90px; 
 }
 
 /* Seccao advantages */
@@ -129,11 +142,17 @@ header {
     background-color:hsl(220, 16%, 96%);
     max-width: 1440px;
     margin: 0 auto;
+    padding: 60px 100px;
 }
 
 .advantages li{
     display: inline-block;
     max-width: 300px;
+}
+
+.advantages p:first-of-type {
+    max-width: 650px;
+    margin-bottom: 40px;
 }
 
 /* Seccao articles */
