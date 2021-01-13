@@ -78,9 +78,6 @@ header {
     z-index: 20;
 }
 
-.header-logo {
-}
-
 .menu-nav li {
     display: inline-block;
     margin: 5px;
@@ -90,6 +87,11 @@ header {
     color: hsl(233, 8%, 62%);
 }
 
+.menu-nav a:hover {
+    cursor: pointer;
+    color: hsl(233, 26%, 24%);
+}
+
 .btn-invite {
     padding: 9px 23px;
     border-radius: 30px;
@@ -97,6 +99,11 @@ header {
     border: none;
     background-image: linear-gradient(to right,hsl(136, 65%, 51%), hsl(192, 70%, 51%));
     font-size: 0.875rem;
+}
+
+.btn-invite:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
 }
 
 /* Seccao intro */
@@ -174,10 +181,6 @@ header {
     padding: 60px 100px;
 }
 
-.articles ul {
-   
-}
-
 .articles li {
     height: 400px;
     max-width: 275px;
@@ -214,4 +217,102 @@ footer {
     max-width: 1440px;
     margin: 0 auto;
     background-color: hsl(233, 26%, 24%);
+    padding: 30px 100px;
+}
+
+.footer-logosocial {
+    flex-grow: 1;
+}
+
+.footer-links {
+    flex-grow: 1;
+}
+
+.footer-btn-copyright {
+    flex-grow: 3;
+    text-align: right;
+}
+.footer-logosocial figure {
+    margin-bottom: 30px;
+}
+
+.facebook-icon {
+    content: url(../imagens/icon-facebook.svg);
+}
+
+.youtube-icon {
+    content: url(../imagens/icon-youtube.svg);
+}
+
+.twitter-icon {
+    content: url(../imagens/icon-twitter.svg);
+}
+
+.pinterest-icon {
+    content: url(../imagens/icon-pinterest.svg);
+}
+
+.instagram-icon {
+    content: url(../imagens/icon-instagram.svg);
+}
+
+
+.facebook-icon:hover {
+    content: url(../imagens/icon-facebook-blue.svg);
+}
+
+.youtube-icon:hover {
+    content: url(../imagens/icon-youtube-blue.svg);
+}
+
+.twitter-icon:hover {
+    content: url(../imagens/icon-twitter-blue.svg);
+}
+
+.pinterest-icon:hover {
+    content: url(../imagens/icon-pinterest-blue.svg);
+}
+
+.instagram-icon:hover {
+    content: url(../imagens/icon-instagram-blue.svg);
+}
+
+.footer-logosocial li{
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.footer-links {
+    margin: 0 20px;
+    max-width: 320px;
+}
+
+.footer-links a {
+    color: white;
+    font-weight: 300;
+}
+
+.footer-links a:hover {
+    cursor: pointer;
+    color: hsl(171, 66%, 44%);
+}
+
+.footer-links li {
+    margin: 0 10px 10px 0;
+}
+
+.basis-150 {
+	flex-basis: 150px;
+}
+
+.basis-300 {
+	flex-basis: 300px;
+}
+
+.footer-btn-copyright button{
+    margin-bottom: 20px;
+}
+
+.footer-btn-copyright p {
+    font-size: 1rem;
 }
