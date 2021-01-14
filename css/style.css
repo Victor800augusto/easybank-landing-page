@@ -186,22 +186,11 @@ header {
     margin-bottom: 40px;
 }
 
-@media(max-width:480px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-    h2 {
-        font-size: 2rem;
-    }
-    .intro-imagem {
-        display: none;
-    }
-}
 
-/* Seccao advantages responsividade mobile */
+
+/* Seccao advantages responsividade mobile 480px*/
 @media(max-width:480px) {
     .advantages {
-        padding: 40px 20px;
         text-align: center;
     }
     .advantages li {
@@ -263,6 +252,22 @@ header {
     margin-left: 20px;
 }
 
+/* Seccao articles responsividade mobile 480px*/
+@media(max-width:480px) {
+    .articles h2 {
+        text-align: center;
+    }
+    .articles li {
+        max-width: none;
+        margin: 15px 0;
+    }
+    .articles img {
+        object-fit: cover;
+        min-width: 100%;
+        min-height: 100%
+    }
+ 
+}
 /* Footer */
 
 footer {
@@ -367,4 +372,20 @@ footer {
 
 .footer-btn-copyright p {
     font-size: 1rem;
+}
+
+/* Responsividade geral */
+@media(max-width:480px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .intro-imagem {
+        display: none;
+    }
+    .advantages, .articles {
+        padding: 40px 20px;
+    }
 }
