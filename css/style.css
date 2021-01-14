@@ -104,7 +104,7 @@ header {
 }
 
 .btn-invite {
-    padding: 9px 23px;
+    padding: 12px 28px;
     border-radius: 30px;
     color: white;
     border: none;
@@ -313,7 +313,6 @@ footer {
     content: url(../imagens/icon-instagram.svg);
 }
 
-
 .facebook-icon:hover {
     content: url(../imagens/icon-facebook-blue.svg);
 }
@@ -356,14 +355,15 @@ footer {
 
 .footer-links li {
     margin: 0 10px 10px 0;
+    flex-basis: 150px;
 }
 
 .basis-150 {
-	flex-basis: 150px;
+	
 }
 
 .basis-300 {
-	flex-basis: 300px;
+	
 }
 
 .footer-btn-copyright button{
@@ -372,6 +372,32 @@ footer {
 
 .footer-btn-copyright p {
     font-size: 1rem;
+}
+
+/* footer responsividade mobile 480px*/
+@media(max-width:480px) {
+    footer {
+        text-align: center;
+    }
+    .footer-logosocial {
+        margin-bottom: 15px;
+    }
+    .footer-logosocial img {
+        margin:  0 auto;
+    }
+
+    .footer-links {
+        margin: 20px auto;
+    }
+
+    .footer-links li {
+        flex-basis: 300px;
+        margin: 5px auto;
+    }
+
+    .footer-btn-copyright {
+        text-align: center;
+    }
 }
 
 /* Responsividade geral */
@@ -385,7 +411,7 @@ footer {
     .intro-imagem {
         display: none;
     }
-    .advantages, .articles {
+    .advantages, .articles, footer {
         padding: 40px 20px;
     }
 }
