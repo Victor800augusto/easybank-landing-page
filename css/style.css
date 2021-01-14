@@ -181,9 +181,47 @@ header {
     margin: 10px;
 }
 
-.advantages p:first-of-type {
+.advantages > p {
     max-width: 550px;
     margin-bottom: 40px;
+}
+
+@media(max-width:480px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .intro-imagem {
+        display: none;
+    }
+}
+
+/* Seccao advantages responsividade mobile */
+@media(max-width:480px) {
+    .advantages {
+        padding: 40px 20px;
+        text-align: center;
+    }
+    .advantages li {
+        max-width: 357px;
+        margin: 15px 0 15px 0;
+    }
+
+    .advantages h2 {
+        max-width: 320px;
+        margin: 0 auto 20px auto;
+    }
+
+    .advantages > p {
+        max-width: 357px;
+        margin: 0 auto 30px auto;
+    }
+
+    .advantages img {
+        margin: 0 auto 20px auto;
+    }
 }
 
 /* Seccao articles */
